@@ -2,12 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    padding: 8px 16px;
-    font-size: 16px;
-    border-width: 1px;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: skyblue;  
+  color: white;              
+  border: none;               
+  margin-top: 0px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: deepskyblue;
+  }
 `;
+
 
 // 버튼 컴포넌트에서 프롭스로 받은 타이틀이 버튼 목록에 표시
 // 스타일드 컴포넌트를 사용해서 버튼 태그에 스타일을 준 스타일드 버튼 컴포넌트 생성

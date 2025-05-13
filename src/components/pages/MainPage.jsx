@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 const Container = styled.div`
@@ -20,7 +19,12 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 28px;
   font-weight: bold;
+  color: skyblue;
+  border-bottom: 2px solid skyblue;
+  padding-bottom: 8px;
   margin-bottom: 20px;
+  text-align: left;     
+  padding-left: 20px;    
 `;
 
 // 페이지 이동을 위해 리액트 라우터 돔에 useNavigate 훅 사용

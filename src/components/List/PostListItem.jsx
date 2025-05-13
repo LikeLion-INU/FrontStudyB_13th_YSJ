@@ -1,20 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const Wrapper = styled.div`
-    width: calc()(100% -32px);
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border: 1px solid grey;
-    border-radius: 8px;
-    cursor: pointer;
-    background: white;
-    :hover {
-        background: lightgrey;
-    }
+  width: calc(100% - 32px);          /* 괄호 오타 수정 */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid skyblue;         /* 하늘색 테두리 */
+  border-radius: 8px;
+  background: white;                 /* 배경색: 흰색 */
+  color: black;                      /* 글자색: 검정 */
+  cursor: pointer;
+  margin-top: 16px;                  /* 위 요소(버튼 등)와의 간격 */
+  :hover {
+    background: lightgrey;
+  }
 `;
 
 const TitleText = styled.p`

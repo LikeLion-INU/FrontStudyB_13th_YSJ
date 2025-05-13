@@ -6,9 +6,14 @@ import PostWritePage from "./components/pages/PostWritePage";
 import PostViewPage from "./components/pages/PostViewPage";
 
 const MainTitleText = styled.p`
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  color : white;
+  background-color: skyblue;
+  padding: 35px;
+  padding-left: 50px;
+  // border-radius: 8px;
 `;
 
 function App() {
@@ -80,22 +85,3 @@ function App() {
 }
 
 export default App;
-
-/*
-// 마지막에 :(콜론)postId는 동적으로 변하는 파라미터를 위한 값이다.
-// 콜론과 id를 사용하면 실제 컴포넌트에서는 useParams를 사용해 아이디로 해당 값을 가져올 수 있다고 한다.
-function App(props) {
-  return (
-    <BrowserRouter>
-      <MainTitleText>승지의 미니 블로그</MainTitleText>
-      <Routes>
-      <Route index element={<MainPage />} />
-        <Route path="post-write" element={<PostWritePage />} />
-        <Route path="post/:postId" element={<PostViewPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
-*/
